@@ -1,0 +1,96 @@
+* {
+  font-family: Inter, sans-serif;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+#navbar {
+  position: fixed;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 400px;
+  top: 0;
+  left: 0;
+}
+
+#navbar header {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 25px 25px 0 25px;
+}
+
+#navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar li {
+  padding: 20px 0 20px 15px;
+  border-bottom: 1px solid #555;
+}
+
+#navbar li a {
+  color: #000;
+  display: flex;
+  text-decoration: none;
+}
+
+#main-doc {
+  background-color: #0001;
+  flex: 1;
+  padding: 20px;
+  font-size: 1.8em;
+  margin-left: 400px;
+}
+
+/* media query for smaller screens */
+@media screen and (max-width: 750px) {
+  #navbar {
+    width: 100%;
+    height: auto;
+    position: static;
+    text-align: center;
+  }
+
+  #navbar header {
+    margin: 25px 0;
+    font-size: 1.8em;
+  }
+
+  #main-doc {
+    margin-left: 0;
+  }
+}
+
+#scrollTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* show the button when the screen is less than or equal to 768px wide */
+@media screen and (max-width: 768px) {
+  #scrollTopBtn {
+    display: block;
+  }
+}
+
+#scrollToTopButton:hover {
+  background-color: #fff;
+}
